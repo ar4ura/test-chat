@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>my chat</title>
+</head>
+<body>
+    <div class="chat"></div>
+    <form class="form-new-message">
+        <input class="who-message" type="text" placeholder="введите ваше имя">
+        <input class="text-message" type="text" placeholder="введите сообщение">
+        <button type="submit">отправить</button>
+    </form>
+
+    <button class="chat-hidden">скрыть\показать чат</button>
+    <template id="template-message">
+        <div class="msg">
+            <div class="nick-tag">
+                <img class="nick-image" src="img/anonimus.png" alt="нет фото">
+                <p class="nick-name"></p>
+            </div>
+            
+
+            <p class="nick-message"></p>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
